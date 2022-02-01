@@ -1,0 +1,49 @@
+
+.container{
+
+    display: flex;
+    padding: 1em;
+    background-color: cyan;
+    
+    
+    
+    }
+    
+    
+    .main,
+    .second{
+    
+    flex: 2;
+    padding: 1em;
+    margin: .6em;
+    background: white;
+    
+    
+    
+    }
+    
+    
+    .second{
+    
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    }
+    
+    .nested{
+    flex: 1;
+    background-color: cyan;
+    margin: .6em;
+    
+    }
+    
+    
+    .second 
+    .nested:nth-child(1), 
+    .nested:nth-child(4) {
+     
+    flex: 100%;
+    background-color: red;
+    
+    }
+    
